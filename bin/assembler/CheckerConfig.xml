@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans> 
+   <bean id="TextEditor" class="checker.TextEditor"> 
+      <property name="spellChecker"> 
+         <ref local="SpellChecker"/> 
+      </property> 
+   </bean> 
+   <bean id="SpellChecker" class="checker.EndPunctuationSpellChecker"> 
+      <property name="filename"> 
+         <value>text.txt</value> 
+      </property> 
+   </bean> 
+</beans> 

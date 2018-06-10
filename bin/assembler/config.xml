@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans> 
+   <bean id="MovieLister" class="movie.MovieLister"> 
+      <property name="finder"> 
+         <ref local="MovieFinder"/> 
+      </property> 
+   </bean> 
+   <bean id="MovieFinder" class="movie.ColonMovieFinder"> 
+      <property name="filename"> 
+         <value>movies1.txt</value> 
+      </property> 
+   </bean> 
+</beans> 

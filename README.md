@@ -1,0 +1,1 @@
+Implemented a dependency injection inversion of control container. Functionality illustrated with simple movie example.
